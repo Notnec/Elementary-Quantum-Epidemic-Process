@@ -1,0 +1,9 @@
+LX: 101
+LY: 101
+gd: 1
+gi: 2
+Omega: 2.01
+Max time: 30
+dt: 0.2
+num of trajectories: 1050
+threshold: 

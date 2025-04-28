@@ -1,0 +1,10 @@
+LX: 11
+LY: 11
+gi first bound: 0.2
+gi second bound: 1.1
+num of gis: 10
+Omega first bound: 0.01
+Omega second bound: 2.01
+num of Omegas: 11
+num of trajectories: 0
+threshold: 

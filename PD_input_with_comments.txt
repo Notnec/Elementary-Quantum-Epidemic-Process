@@ -1,0 +1,10 @@
+LX: 11                          Horizontal size of the lattice (must be an integer > 1)
+LY: 11                          Vertical size of the lattice (must be an integer > 1)
+gi first bound: 0.2             Lowest value of \gamma_I to be simulated
+gi second bound: 1.1            Highest value of \gamma_I to be simulated 
+num of gis: 10                  Number of equally-spaced \gamma_I points to be simulated between the bounds above
+Omega first bound: 0.01         Lowest value of \Omega to be simulated
+Omega second bound: 2.01        Highest value of \Omega to be simulated
+num of Omegas: 11               Number of equally-spaced \Omega points to be simulated between the bounds above
+num of trajectories: 0          Number of trajectories to be simulated per parameter point (\gamma_I, \Omega). If 0, the programme will collect trajectories until a "stop.txt" file is created (renamed / copied) in the main folder
+threshold:                      The precision threshold at which the bisection method stops in the determination of the jump probability. If empty, the default is 10^(-4)

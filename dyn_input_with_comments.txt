@@ -6,4 +6,4 @@ Omega: 2.01                      Value of \Omega
 Max time: 30                     Maximal time at which the simulation stops (called t_{end} in the main text)
 dt: 0.2                          Time step at which data is collected
 num of trajectories: 1050        Number of trajectories
-threshold: 
+threshold:                       The precision threshold at which the bisection method stops in the determination of the jump probability. If empty, the default is 10^(-4)

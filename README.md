@@ -23,7 +23,8 @@ SUGGESTION: run first a few "trial" trajectories, starting at small system sizes
 In each of the four folders "Density_Movies", "PD_Final_population", "PD_ID_times" and "Population_evolution" you may find a README file describing the files that the algorithm produces in each.
 In particular, 
 
-(!) dyndata_collection() is going to produce files in the main folder, in "Density_Movies" and in "Population_evolution";
+
+(1) dyndata_collection() is going to produce files in the main folder, in "Density_Movies" and in "Population_evolution";
   In the main folder, one file will be produced every time the code is run, called
     "Cpp_parameters_<LX>_x_<LY>_t<num of trajectories>_batch<identifier number>.txt",
   where all part within < > brackets should be interpreted as integer numbers like in the example below:
@@ -49,23 +50,26 @@ In particular,
 
 As already mentioned, the other files are described in the READMEs inside the "Density_Movies" and "Population_evolution" folders.
 
+
 (2) PDdata_collection() is going to produce files in the main folder, in "PD_Final_population" and in "PD_ID_times";
   In the main folder, two files will be produced every time the code is run, called
-    "PD_Cpp_parameters_<LX>_x_<LY>_t<num of trajectories>_batch<identifier number>.txt",
+    "PD_Cpp_parameters_<LX>_x_<LY>_t<num of trajectories>_A1_batch<identifier number>.txt",
   and
-    "PD_Cpp_PDpoints_<LX>_x_<LY>_t<num of trajectories>_batch<identifier number>.txt"
+    "PD_Cpp_PDpoints_<LX>_x_<LY>_t<num of trajectories>_A1_batch<identifier number>.txt"
   where all part within < > brackets should be interpreted as integer numbers like in the example below:
-    "PD_Cpp_parameters_13_x_13_t77_batch2.txt"
+    "PD_Cpp_parameters_13_x_13_t77_A1_batch2.txt"
   and
-    "PD_Cpp_PDpoints_13_x_13_t77_batch2.txt".
+    "PD_Cpp_PDpoints_13_x_13_t77_A1_batch2.txt".
   which corresponds to a simulation for a lattice of 13 x 13 sites and a collection of 77 stochastic trajectories per parameter point visited. The batch number is just an identifier which prevents
   subsequent simulations at the same size and number of trajectories to override one another. In this example, a simulation on a lattice of the same size which collected 77 trajectories had already 
   been run previously, producing a file
-    "PD_Cpp_parameters_13_x_13_t77_batch1.txt".
+    "PD_Cpp_parameters_13_x_13_t77_A1_batch1.txt".
   This was therefore the second time that the code ended having produced 77 trajectories (per parameter point) on a square 13 x 13 in size.
   The third time will produce a file
-    "PD_Cpp_parameters_13_x_13_t77_batch3.txt"
+    "PD_Cpp_parameters_13_x_13_t77_A1_batch3.txt"
   and so on.
+  The only reason why there is an "A1" in front of "batch" is because we needed to distinguish also between files run on different computers. There is no need to worry about it
+  if this code is not made into different copies to be run in parallel.
 
   The file "PD_Cpp_parameters..." includes the following lines:
     LX: <LX>

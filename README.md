@@ -6,7 +6,7 @@ The main file is "Scan_parameters.cpp". The remaining ones are function and obje
 
 The code is currently set on "dyndata_collection()". To switch, comment the latter and uncomment "PDdata_collection()".
 
-In the same folder where the main file is located four additional folders must be prepared: "Density_Movies", "PD_final_population", "PD_ID_times" and "Population_evolution".
+In the same folder where the main file is located four additional folders must be prepared: "Density_Movies", "PD_Final_population", "PD_ID_times" and "Population_evolution".
 
 In order to pass parameters to the main, the user can either follow the instructions and enter they manually as they are requested on screen OR 
 prepare two auxiliary txt files: "dyninput.txt" and "PD_input.txt", the first in order to guide dyndata_collection(), the second for PDdata_collection().
@@ -20,4 +20,4 @@ the magnitude of the parameters (especially \gamma_I), may take hours.
 
 SUGGESTION: run first a few "trial" trajectories, starting at small system sizes, in order to get a rough idea of the timescales taken by this algorithm on your system.
 
-In each of the four folders "Density_Movies", "PD_final_population", "PD_ID_times" and "Population_evolution" you may find a README file describing the files that the algorithm produces in each.
+In each of the four folders "Density_Movies", "PD_Final_population", "PD_ID_times" and "Population_evolution" you may find a README file describing the files that the algorithm produces in each.

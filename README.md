@@ -12,9 +12,9 @@ In order to pass parameters to the main, the user can either follow the instruct
 prepare two auxiliary txt files: "dyninput.txt" and "PD_input.txt", the first in order to guide dyndata_collection(), the second for PDdata_collection().
 Two example files are attached. Two similar files with a "_with_comments" added to the name detail the meaning of the various entries.
 
-NOTE: In the input files just mentioned, if you select "0" as your desired number of trajectories, then the code will scan all the requested parameter points, running one trajectory for each,+
-after which it will start another scan, adding one more trajectory per point. The code will continue to run until it reads the presence of a "stop.txt" file in the main folder, 
-which can be e.g. renamed or copied to signal the code to stop. Once the "stop.txt" file presence is read, however, the code will not stop immediately and instead it will finish its current
+NOTE: In the input files just mentioned, if you select "0" as your desired number of trajectories, then the code will scan all the requested parameter points, running one trajectory for each,
+after which it will start another scan, adding one more trajectory per point. The code will continue to run until it reads the presence of a "end.txt" file in the main folder, 
+which can be e.g. renamed or copied to signal the code to stop. Once the "end.txt" file presence is read, however, the code will not stop immediately and instead it will finish its current
 scan to the last parameter point, so that for each point exactly the same number of trajectories is collected. Be aware that this "final stretch", depending on the size of the lattice and
 the magnitude of the parameters (especially \gamma_I), may take hours.
 

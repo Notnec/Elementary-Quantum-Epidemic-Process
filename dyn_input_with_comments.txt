@@ -5,5 +5,5 @@ gi: 2                            Value of \gamma_I
 Omega: 2.01                      Value of \Omega
 Max time: 30                     Maximal time at which the simulation stops (called t_{end} in the main text)
 dt: 0.2                          Time step at which data is collected
-num of trajectories: 1050        Number of trajectories
+num of trajectories: 1050        Number of trajectories; if set to "0" the code will run until it reads the presence of an "end.txt" file in the main folder
 threshold:                       The precision threshold at which the bisection method stops in the determination of the jump probability. If empty, the default is 10^(-4)

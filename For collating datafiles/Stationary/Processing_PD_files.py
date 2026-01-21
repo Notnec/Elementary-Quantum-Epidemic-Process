@@ -4,15 +4,15 @@ import os
 dont_skip = True
 order_of_magn = 10000
 
-# Cpp_param_data_dir = "D:/Auxiliary programming folders/QEP24/Data Production Folder/"
-Cpp_param_data_dir = "D:/"
-# Cpp_param_original_dir = "C:/Users/matte/Documents/C Programmes/Quantum Epidemic Process/Data Production Folder/"
-Cpp_param_original_dir = "C:/Users/matte/Documents/C Programmes/Quantum Epidemic Process/QEP24/"
+Cpp_param_data_dir = "D:/Another folder if present/Otherwise a folder where no parameter files are stored/"
+Cpp_param_original_dir = "C:/Folder where parameter files are stored/"
+# These folders are the so-called "main" folders of the C++ code
+
 Cpp_density_dir = "PD_Final_Population/"
 Cpp_times_dir = "PD_ID_times/"
 
-# processing_dir = "D:/Auxiliary programming folders/QEP24/Py data processing/"
-processing_dir = "D:/Auxiliary programming folders/QEP24/SciPost submission auxiliary/"
+processing_dir = "D:/Where the collated files should appear/"
+# New folder
 
 # DATA FILE INCIPITS
 param_dfi = "PD_Cpp_Parameters_"
@@ -761,5 +761,6 @@ compute_tot_traj(tr_tab0)
 identifier_list0, to_process_list0 = recording_Cparam_files(parlist0, tr_tab0)
 
 combine_all_files(parlist0, fold_tab0, endf_tab0, tr_tab0, identifier_list0, to_process_list0)
+
 
 

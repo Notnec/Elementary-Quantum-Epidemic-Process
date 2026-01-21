@@ -1,9 +1,0 @@
-LX: 101                          Horizontal size of the lattice (must be an integer)
-LY: 101                          Vertical size of the lattice (must be an integer)
-gd: 1                            Value of \gamma_D
-gi: 2                            Value of \gamma_I
-Omega: 2.01                      Value of \Omega
-Max time: 30                     Maximal time at which the simulation stops (called t_{end} in the main text)
-dt: 0.2                          Time step at which data is collected
-num of trajectories: 1050        Number of trajectories
-threshold: 

@@ -8,8 +8,8 @@ The code is currently set on "dyndata_collection()". To switch, comment the latt
 
 In the same folder where the main file is located four additional folders must be prepared: "Density_Movies", "PD_Final_population", "PD_ID_times" and "Population_evolution".
 
-In order to pass parameters to the main, the user can either follow the instructions and enter they manually as they are requested on screen OR 
-prepare two auxiliary txt files: "dyninput.txt" and "PD_input.txt", the first in order to guide dyndata_collection(), the second for PDdata_collection().
+In order to pass parameters to the main, the user can (in the dynamical case) follow the instructions and enter they manually as they are requested on screen OR 
+(in either case) prepare two auxiliary txt files: "dyninput.txt" and "PD_input.txt", the first in order to guide dyndata_collection(), the second for PDdata_collection().
 Two example files are attached. Two similar files with a "_with_comments" added to the name detail the meaning of the various entries.
 
 NOTE: In the input files just mentioned, if you select "0" as your desired number of trajectories, then the code will scan all the requested parameter points, running one trajectory for each,

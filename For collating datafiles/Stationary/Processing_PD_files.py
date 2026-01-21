@@ -6,7 +6,8 @@ order_of_magn = 10000
 
 Cpp_param_data_dir = "D:/Another folder if present/Otherwise a folder where no parameter files are stored/"
 Cpp_param_original_dir = "C:/Folder where parameter files are stored/"
-# These folders are the so-called "main" folders of the C++ code
+# These folders could be for instance the so-called "main" folders of the C++ code, where the "PD_Cpp_Parameters..." files are stored.
+# If the files have been moved after being produced, the new folder paths should be inserted here and, if necessary, in lines 12 and 13 below.
 
 Cpp_density_dir = "PD_Final_Population/"
 Cpp_times_dir = "PD_ID_times/"
@@ -761,6 +762,7 @@ compute_tot_traj(tr_tab0)
 identifier_list0, to_process_list0 = recording_Cparam_files(parlist0, tr_tab0)
 
 combine_all_files(parlist0, fold_tab0, endf_tab0, tr_tab0, identifier_list0, to_process_list0)
+
 
 
 

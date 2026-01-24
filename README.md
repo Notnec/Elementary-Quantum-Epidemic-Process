@@ -1,4 +1,6 @@
 The C++ files were edited with CodeBlocks, the Python files with PyCharm.
+C++ files: data collection via eQEP simulation.
+Python files: some data collation and visualisation.
 
 The main file is "Scan_parameters.cpp". The remaining ones are function and object libraries. "Scan_parameters.cpp" contains two primary instructions:
 1) dyndata_collection()    which produces dynamical data for trajectories up to a maximum time

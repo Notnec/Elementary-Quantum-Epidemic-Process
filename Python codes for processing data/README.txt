@@ -2,3 +2,6 @@ Simulations that address the stationary limit can take a really long time, since
 several stochastic trajectories for every parameter pair (\gamma_I, \Omega). It is thus quite natural to subdivide the load on different machines, or to make
 a few copies of the C++ code and have them run independently. The Python code in the "Stationary" folder is designed to collate all different simulations
 run for the same system, as long as they are collected in one or two folders.
+
+On the other hand, the Python code in the "Movies" folder should allow you to visualise the site-revolved evolution of the S, I, B, D average populations
+over the entire lattice.

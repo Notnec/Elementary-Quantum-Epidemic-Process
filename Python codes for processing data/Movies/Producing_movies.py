@@ -13,8 +13,8 @@ pop_types = ["S", "I", "B", "D"]
 distinguisher = "batch"
 len_d = len(distinguisher)
 
-params_folder = "C:/Users/matte/Documents/C Programmes/Quantum Epidemic Process/QEP24/"
-maps_folder = "C:/Users/matte/Documents/C Programmes/Quantum Epidemic Process/QEP24/Density_Movies/"
+params_folder = "FOLDER WHERE THE Cpp_Parameters FILES ARE LOCATED"
+maps_folder = "FOLDER WHERE THE CPP_Lattice_map FILES ARE LOCATED"
 
 
 class list_of_available_params:
@@ -441,5 +441,6 @@ while selected_num >= 0:
     if selected_num >= 0:
         map_fnames, system_params = par_list.return_map_fnames_and_props(selected_num)
         movie_cycle(map_fnames, system_params)
+
 
 
